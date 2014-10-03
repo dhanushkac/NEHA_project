@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NEHA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">NEHA - New Era Home Automation</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-toggle-off fa-fw"></i> Wall-outlet-02 Process Terminated
+                                    <br><span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            <br>
+                            </a>
+                            <div class = "divider"></div>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-exclamation-triangle fa-fw"></i> 80% Monthly Usage
+                                    <br><span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            <br>
+                            </a>
+                            <div class = "divider"></div>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-toggle-on fa-fw"></i> Wall-outlet-05 Process Activated
+                                    <br><span class="pull-right text-muted small">14 minutes ago</span>
+                                </div>
+                            <br>
+                            </a>
+                            <div class = "divider"></div>
+                        </li>
+
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li class = "">
+                            <div style = "cursor:default;margin:10px 0px;text-align:center;font-weight:bold">
+                            <i class="fa fa-calendar fa-fw"></i> 07-September-2014
+                            </div>
+                        </li>
+                        <li>
+                            <a class="active" href="index.html"><i class="fa fa-square fa-fw"></i> Overview</a>
+                        </li>
+                        <li>
+                            <a href="usage.html"><i class="fa fa-bar-chart-o fa-fw"></i> Usage Details</a>
+                        </li>
+                        <li>
+                            <a href="#" id = "sett"><i class="fa fa-wrench fa-fw"></i> Settings<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse" id = "cn">
+                                <li>
+                                    <a href="usage_settings.html">Usage Settings</a>
+                                </li>
+                                <li>
+                                    <a href="wall_settings.html">Wall-Outlet Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-question-circle fa-fw"></i> About NEHA</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Overview</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-line-chart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">3.6</div>
+                                    <div>Daily Usage(w)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <span class="pull-right text-muted">2.5w Remaining</span>
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">70%</div>
+                                    <div>Daily Threshold</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <span class="pull-right text-muted">95% Used</span>
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-line-chart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">22.5</div>
+                                    <div>Monthly Usage(w)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%">
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <span class="pull-right text-muted">102.3w Remaining</span>
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">14%</div>
+                                    <div>Monthly Threshold</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%">
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <span class="pull-right text-muted">14% Used</span>
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Current Status
+                        </div>
+                        <div class="panel-body" >
+                            <div class = "col-lg-4" style = "text-align:center;">
+                                <div>
+                                    <strong>
+                                    Predicted Usage<br>
+                                </strong>
+                                <small>This Month</small>
+                                <hr>
+                                <div class = "col-lg-6" style = "border-right: 1px solid #000000;font-size:28px;font-weight:bold">
+                                    160.7 W
+                                </div>
+                                <div class = "col-lg-6" style = "font-size:28px;font-weight:bold">
+                                    Rs.1320
+                                </div>
+                                </div>
+                                <hr>
+                                <small style = "color:#c00000">LIKELY TO SPEND 13W LESS THAN LAST MONTH</small>
+                                <br>
+                                <hr>
+                            </div>
+                            <div class = "col-lg-4" style = "text-align:center;">
+                                <div>
+                                    <strong>
+                                    Predicted Cost<br>
+                                </strong>
+                                <small>Today</small>
+                                <hr>
+                                <div class = "col-lg-6" style = "border-right: 1px solid #000000;font-size:28px;font-weight:bold">
+                                    4.6 W
+                                </div>
+                                <div class = "col-lg-6" style = "font-size:28px;font-weight:bold">
+                                    Rs.80
+                                </div>
+                                
+                                </div>
+                                <hr>
+                                <small style = "color:green">LIKELY TO SPEND Rs.140 LESS THAN LAST MONTH</small>
+                                <br>
+                                <hr>
+                            </div>
+                            <div class = "col-lg-4" style = "text-align:center;">
+                                <div>
+                                    <strong>
+                                    Last Month Compare<br>
+                                </strong>
+                                <small>until today</small>
+                                <hr>
+                                <div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%">
+                                        </div>
+                                    </div>
+                                    <p style = "text-align:center">
+                                        <span class="pull-right text-muted">14% Improved</span>
+                                    </p>
+
+                                </div>
+                                <br>
+                                <hr>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Current Usage
+                        </div>
+                        <div class="panel-body">
+                            <table class = "table">
+                                <thead>
+                                    <tr>
+                                        <th>Outlet Name</th>
+                                        <th>Running Time</th>
+                                        <th>On/Off</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Kitchen - #01</td>
+                                        <td>00h 56m 12s</td>
+                                        <td>
+                                            <div class="btn-group" data-toggle="buttons">
+                                              <label class="btn btn-primary active">
+                                                <input type="radio" name="options" id="option1" checked> On
+                                              </label>
+                                              <label class="btn btn-primary">
+                                                <input type="radio" name="options" id="option2"> Off
+                                              </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Room #02</td>
+                                        <td>00h 59m 12s</td>
+                                        <td>
+                                            <div class="btn-group" data-toggle="buttons">
+                                              <label class="btn btn-primary active">
+                                                <input type="radio" name="options" id="option1" checked> On
+                                              </label>
+                                              <label class="btn btn-primary">
+                                                <input type="radio" name="options" id="option2"> Off
+                                              </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Room #04</td>
+                                        <td>01h 44m 22s</td>
+                                        <td>
+                                            <div class="btn-group" data-toggle="buttons">
+                                              <label class="btn btn-primary active">
+                                                <input type="radio" name="options" id="option1" checked> On
+                                              </label>
+                                              <label class="btn btn-primary">
+                                                <input type="radio" name="options" id="option2"> Off
+                                              </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div>
+                                    <div id="dynamic-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-toggle-on fa-fw"></i> Wallet 05 turned on!
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-wrench fa-fw"></i> settings changed
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-toggle-off fa-fw"></i> wallet 06 turned off!
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
+
